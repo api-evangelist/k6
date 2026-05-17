@@ -24,14 +24,14 @@ apis:
     properties:
       - type: Documentation
         url: https://grafana.com/docs/k6/latest/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/grafana/k6
 common:
   - type: Website
     url: https://k6.io
   - type: Documentation
     url: https://grafana.com/docs/k6/latest/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/grafana/k6
 maintainers:
   - FN: Kin Lane
