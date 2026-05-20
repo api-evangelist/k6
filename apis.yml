@@ -27,6 +27,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/grafana/k6
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/k6io
   - type: Website
     url: https://k6.io
   - type: Documentation
