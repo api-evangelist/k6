@@ -1,0 +1,535 @@
+{
+  "item": [
+    {
+      "id": "f32d11c7-5974-42b7-a57a-5b564afb386d",
+      "name": "Projects",
+      "description": {
+        "content": "Manage k6 projects within a Grafana stack.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5f5e99b3-daae-4c13-93f2-cf19ecad4b22",
+          "name": "List projects",
+          "request": {
+            "name": "List projects",
+            "description": {
+              "content": "Return all k6 projects available within the calling Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "projects"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cc5ee21c-6792-440c-8e9a-59bab34c6836",
+              "name": "A list of projects.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "projects"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "78433910-270b-4a7f-ba7e-76ffb987d096",
+      "name": "Load tests",
+      "description": {
+        "content": "Configure and manage load-testing resources.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0be4451b-b801-4f71-ac45-1aa9efbfe7a9",
+          "name": "List load tests",
+          "request": {
+            "name": "List load tests",
+            "description": {
+              "content": "Return load tests configured within the Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "load-tests"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9a466605-e231-4afa-a933-c4638e539d20",
+              "name": "A list of load tests.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "load-tests"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "3888a866-e33d-449e-ad09-9f0fad9936fb",
+      "name": "Test runs",
+      "description": {
+        "content": "Inspect and control load-test execution runs.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5f38b0d2-1d5a-476c-9257-a72d9ad2716b",
+          "name": "List test runs",
+          "request": {
+            "name": "List test runs",
+            "description": {
+              "content": "Return executed load-test runs for the Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "test-runs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cea78cfe-789f-43ba-807c-2a33769be055",
+              "name": "A list of test runs.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "test-runs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "e91e1159-0b25-444e-9ab5-e4921fa5a5aa",
+      "name": "Schedules",
+      "description": {
+        "content": "Manage scheduled load-test execution.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "049669d6-a8fb-4c39-bfea-12e4b65c6a1f",
+          "name": "List schedules",
+          "request": {
+            "name": "List schedules",
+            "description": {
+              "content": "Return scheduled load-test executions for the Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "schedules"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dc4386a4-30f6-4526-a91c-df7c717e039a",
+              "name": "A list of schedules.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schedules"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "0d5c4c57-db0b-46cc-9a85-b741a80e8069",
+      "name": "Load zones",
+      "description": {
+        "content": "Manage geographic load-generation zones.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9e2142d4-14b4-4a95-ae81-733012603c87",
+          "name": "List load zones",
+          "request": {
+            "name": "List load zones",
+            "description": {
+              "content": "Return available geographic load-generation zones.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "load-zones"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b39b2e68-e0da-4548-9ec8-9e6ea48fe351",
+              "name": "A list of load zones.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "load-zones"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.k6.io/cloud/v6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8921bae0-1193-4355-812c-a913f4180d02",
+    "name": "Grafana Cloud k6 REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for managing Grafana Cloud k6 load-testing resources, including projects, load tests, test runs, schedules, load zones, authorization, and metrics. All requests require an API token (Personal or Grafana Stack) and the X-Stack-Id header identifying the target Grafana stack.\n\nContact Support:\n Name: Grafana k6 Support",
+      "type": "text/plain"
+    }
+  }
+}

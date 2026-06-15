@@ -1,0 +1,141 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Grafana Cloud k6 REST API",
+    "version": "6.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/projects",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return all k6 projects available within the calling Grafana stack."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Load tests",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List load tests",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/load-tests",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return load tests configured within the Grafana stack."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Test runs",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List test runs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/test-runs",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return executed load-test runs for the Grafana stack."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Schedules",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List schedules",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/schedules",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return scheduled load-test executions for the Grafana stack."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Load zones",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List load zones",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/load-zones",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return available geographic load-generation zones."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
