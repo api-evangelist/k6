@@ -3,7 +3,7 @@ name: K6
 description: >-
   k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Load Testing
   - Testing
