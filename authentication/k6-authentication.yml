@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/k6-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: Grafana Cloud k6 API token (Personal or Grafana Stack token) supplied as a Bearer
+    token in the Authorization header.
+  sources:
+  - openapi/k6-openapi.yml
