@@ -3,7 +3,20 @@ name: K6
 description: >-
   k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/k6.png
 tags:
   - Load Testing
   - Testing
@@ -13,19 +26,65 @@ created: '2026-03-25'
 modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
-  - aid: k6:k6
-    name: K6
-    description: >-
-      k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
-    humanURL: https://k6.io
-    tags:
-      - Load Testing
-      - Testing
-    properties:
-      - type: Documentation
-        url: https://grafana.com/docs/k6/latest/
-      - type: GitHubRepository
-        url: https://github.com/grafana/k6
+- aid: k6:k6
+  name: K6
+  description: >-
+    k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability
+    of APIs using JavaScript-based test scripts.
+  humanURL: https://k6.io
+  tags:
+  - Load Testing
+  - Testing
+  properties:
+  - type: Documentation
+    url: https://grafana.com/docs/k6/latest/
+  - type: GitHubRepository
+    url: https://github.com/grafana/k6
+- aid: k6:k6-load-tests-api
+  name: K6 Load tests API
+  description: Configure and manage load-testing resources.
+  humanURL: https://k6.io
+  tags:
+  - Load tests
+  properties:
+  - type: OpenAPI
+    url: openapi/k6-load-tests-api-openapi.yml
+- aid: k6:k6-load-zones-api
+  name: K6 Load zones API
+  description: Manage geographic load-generation zones.
+  humanURL: https://k6.io
+  tags:
+  - Load zones
+  properties:
+  - type: OpenAPI
+    url: openapi/k6-load-zones-api-openapi.yml
+- aid: k6:k6-projects-api
+  name: K6 Projects API
+  description: Manage k6 projects within a Grafana stack.
+  humanURL: https://k6.io
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/k6-projects-api-openapi.yml
+- aid: k6:k6-schedules-api
+  name: K6 Schedules API
+  description: Manage scheduled load-test execution.
+  humanURL: https://k6.io
+  tags:
+  - Schedules
+  properties:
+  - type: OpenAPI
+    url: openapi/k6-schedules-api-openapi.yml
+- aid: k6:k6-test-runs-api
+  name: K6 Test runs API
+  description: Inspect and control load-test execution runs.
+  humanURL: https://k6.io
+  tags:
+  - Test runs
+  properties:
+  - type: OpenAPI
+    url: openapi/k6-test-runs-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/k6-agentic-access.yml
