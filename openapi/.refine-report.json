@@ -1,0 +1,22 @@
+{
+  "provider": "k6",
+  "sources": [
+    "k6-load-tests-api-openapi.yml",
+    "k6-load-zones-api-openapi.yml",
+    "k6-projects-api-openapi.yml",
+    "k6-schedules-api-openapi.yml",
+    "k6-test-runs-api-openapi.yml"
+  ],
+  "outputs": [
+    "k6-load-tests-api-openapi.yml",
+    "k6-load-zones-api-openapi.yml",
+    "k6-projects-api-openapi.yml",
+    "k6-schedules-api-openapi.yml",
+    "k6-test-runs-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
