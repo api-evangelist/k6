@@ -1,0 +1,131 @@
+{
+  "item": [
+    {
+      "id": "0a05eeaa-ef0e-493c-a842-7c45afa35ba8",
+      "name": "Schedules",
+      "description": {
+        "content": "Manage scheduled load-test execution.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e5487099-3344-4364-b1e7-32b577fd42a2",
+          "name": "List schedules",
+          "request": {
+            "name": "List schedules",
+            "description": {
+              "content": "Return scheduled load-test executions for the Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "schedules"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9023bdec-2154-4fa2-9661-5c1a8794e768",
+              "name": "A list of schedules.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schedules"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.k6.io/cloud/v6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "da751092-3259-419f-988a-b7df3e3156fc",
+    "name": "Grafana Cloud k6 REST Load tests Schedules API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for managing Grafana Cloud k6 load-testing resources, including projects, load tests, test runs, schedules, load zones, authorization, and metrics. All requests require an API token (Personal or Grafana Stack) and the X-Stack-Id header identifying the target Grafana stack.\n\nContact Support:\n Name: Grafana k6 Support",
+      "type": "text/plain"
+    }
+  }
+}

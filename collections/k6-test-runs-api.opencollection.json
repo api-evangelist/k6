@@ -1,0 +1,41 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Grafana Cloud k6 REST Load tests Test runs API",
+    "version": "6.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Test runs",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List test runs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/test-runs",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return executed load-test runs for the Grafana stack."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

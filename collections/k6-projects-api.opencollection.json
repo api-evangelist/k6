@@ -1,0 +1,41 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Grafana Cloud k6 REST Load tests Projects API",
+    "version": "6.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.k6.io/cloud/v6/projects",
+            "headers": [
+              {
+                "name": "X-Stack-Id",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Return all k6 projects available within the calling Grafana stack."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,131 @@
+{
+  "item": [
+    {
+      "id": "75a88021-82e1-460b-8379-a3e805a066ff",
+      "name": "Load tests",
+      "description": {
+        "content": "Configure and manage load-testing resources.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6d1cbd59-17b4-40a5-b1d5-a3c05d7f22d3",
+          "name": "List load tests",
+          "request": {
+            "name": "List load tests",
+            "description": {
+              "content": "Return load tests configured within the Grafana stack.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "load-tests"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) Identifier of the Grafana stack to query.",
+                "key": "X-Stack-Id",
+                "value": "<string>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0c97a9df-3165-444b-baca-00371e8bee9a",
+              "name": "A list of load tests.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "load-tests"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) Identifier of the Grafana stack to query.",
+                    "key": "X-Stack-Id",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.k6.io/cloud/v6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "12029595-55fc-44b5-ab21-596189c209d2",
+    "name": "Grafana Cloud k6 REST Load tests API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for managing Grafana Cloud k6 load-testing resources, including projects, load tests, test runs, schedules, load zones, authorization, and metrics. All requests require an API token (Personal or Grafana Stack) and the X-Stack-Id header identifying the target Grafana stack.\n\nContact Support:\n Name: Grafana k6 Support",
+      "type": "text/plain"
+    }
+  }
+}
