@@ -63,6 +63,8 @@ apis:
   description: Manage k6 projects within a Grafana stack.
   humanURL: https://k6.io
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -81,6 +83,8 @@ apis:
   description: Inspect and control load-test execution runs.
   humanURL: https://k6.io
   tags:
+  - Test Runs
+  tags_raw:
   - Test runs
   properties:
   - type: OpenAPI
