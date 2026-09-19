@@ -59,6 +59,8 @@ apis:
   description: Configure and manage load-testing resources.
   humanURL: https://k6.io
   tags:
+  - Load Tests
+  tags_raw:
   - Load tests
   properties:
   - type: OpenAPI
@@ -88,6 +90,8 @@ apis:
   description: Manage scheduled load-test execution.
   humanURL: https://k6.io
   tags:
+  - Schedule
+  tags_raw:
   - Schedules
   properties:
   - type: OpenAPI
