@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Grafana Cloud k6 REST Load tests Schedules API
+  title: Grafana Cloud k6 REST Schedules API
   description: REST API for managing Grafana Cloud k6 load-testing resources, including projects, load tests, test runs, schedules, load zones, authorization, and metrics. All requests require an API token (Personal or Grafana Stack) and the X-Stack-Id header identifying the target Grafana stack.
   version: 6.0.0
   termsOfService: https://grafana.com/legal/terms/

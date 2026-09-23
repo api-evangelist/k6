@@ -1,11 +1,7 @@
 {
   "provider": "k6",
   "sources": [
-    "k6-load-tests-api-openapi.yml",
-    "k6-load-zones-api-openapi.yml",
-    "k6-projects-api-openapi.yml",
-    "k6-schedules-api-openapi.yml",
-    "k6-test-runs-api-openapi.yml"
+    "_original/k6-openapi.yml"
   ],
   "outputs": [
     "k6-load-tests-api-openapi.yml",
@@ -17,6 +13,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "k6-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "k6-load-tests-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "k6-load-zones-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "k6-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "k6-schedules-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "k6-test-runs-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

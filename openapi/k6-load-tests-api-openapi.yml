@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Grafana Cloud k6 REST Load tests API
   description: REST API for managing Grafana Cloud k6 load-testing resources, including projects, load tests, test runs, schedules, load zones, authorization, and metrics. All requests require an API token (Personal or Grafana Stack) and the X-Stack-Id header identifying the target Grafana stack.
@@ -16,7 +16,7 @@ servers:
 security:
 - bearerAuth: []
 tags:
-- name: Load tests
+- name: Load Tests
   description: Configure and manage load-testing resources.
 paths:
   /load-tests:
@@ -25,7 +25,7 @@ paths:
       summary: List load tests
       description: Return load tests configured within the Grafana stack.
       tags:
-      - Load tests
+      - Load Tests
       parameters:
       - name: X-Stack-Id
         in: header
