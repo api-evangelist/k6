@@ -1,0 +1,151 @@
+openapi: 3.1.0
+info:
+  title: Grafana Cloud k6 REST API
+  description: >-
+    REST API for managing Grafana Cloud k6 load-testing resources, including
+    projects, load tests, test runs, schedules, load zones, authorization,
+    and metrics. All requests require an API token (Personal or Grafana Stack)
+    and the X-Stack-Id header identifying the target Grafana stack.
+  version: 6.0.0
+  termsOfService: https://grafana.com/legal/terms/
+  contact:
+    name: Grafana k6 Support
+    url: https://grafana.com/docs/k6/latest/
+  license:
+    name: Proprietary
+    url: https://grafana.com/legal/terms/
+
+servers:
+  - url: https://api.k6.io/cloud/v6
+    description: Grafana Cloud k6 REST API (v6)
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: Projects
+    description: Manage k6 projects within a Grafana stack.
+  - name: Load tests
+    description: Configure and manage load-testing resources.
+  - name: Test runs
+    description: Inspect and control load-test execution runs.
+  - name: Schedules
+    description: Manage scheduled load-test execution.
+  - name: Load zones
+    description: Manage geographic load-generation zones.
+
+paths:
+  /projects:
+    get:
+      operationId: listProjects
+      summary: List projects
+      description: Return all k6 projects available within the calling Grafana stack.
+      tags:
+        - Projects
+      parameters:
+        - name: X-Stack-Id
+          in: header
+          required: true
+          description: Identifier of the Grafana stack to query.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of projects.
+          content:
+            application/json:
+              schema:
+                type: object
+  /load-tests:
+    get:
+      operationId: listLoadTests
+      summary: List load tests
+      description: Return load tests configured within the Grafana stack.
+      tags:
+        - Load tests
+      parameters:
+        - name: X-Stack-Id
+          in: header
+          required: true
+          description: Identifier of the Grafana stack to query.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of load tests.
+          content:
+            application/json:
+              schema:
+                type: object
+  /test-runs:
+    get:
+      operationId: listTestRuns
+      summary: List test runs
+      description: Return executed load-test runs for the Grafana stack.
+      tags:
+        - Test runs
+      parameters:
+        - name: X-Stack-Id
+          in: header
+          required: true
+          description: Identifier of the Grafana stack to query.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of test runs.
+          content:
+            application/json:
+              schema:
+                type: object
+  /schedules:
+    get:
+      operationId: listSchedules
+      summary: List schedules
+      description: Return scheduled load-test executions for the Grafana stack.
+      tags:
+        - Schedules
+      parameters:
+        - name: X-Stack-Id
+          in: header
+          required: true
+          description: Identifier of the Grafana stack to query.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of schedules.
+          content:
+            application/json:
+              schema:
+                type: object
+  /load-zones:
+    get:
+      operationId: listLoadZones
+      summary: List load zones
+      description: Return available geographic load-generation zones.
+      tags:
+        - Load zones
+      parameters:
+        - name: X-Stack-Id
+          in: header
+          required: true
+          description: Identifier of the Grafana stack to query.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of load zones.
+          content:
+            application/json:
+              schema:
+                type: object
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: >-
+        Grafana Cloud k6 API token (Personal or Grafana Stack token) supplied as
+        a Bearer token in the Authorization header.
