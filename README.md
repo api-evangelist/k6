@@ -1,4 +1,4 @@
-# K6 (k6)
+# K6
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,50 +66,125 @@
 
 k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/k6/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/k6/refs/heads/main/apis.yml)
+**Areas:** Load Testing · Testing
 
-## Scope
+## K6 on APIs.io
 
-- **Type:** Index
+Everything profiled for K6 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/k6/](https://apis.io/providers/k6/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-- Load Testing
-- Testing
+- [K6](https://apis.io/apis/k6/k6/) — k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
+- [K6 Load tests API](https://apis.io/apis/k6/k6-load-tests-api/) — Configure and manage load-testing resources.
+- [K6 Load zones API](https://apis.io/apis/k6/k6-load-zones-api/) — Manage geographic load-generation zones.
+- [K6 Projects API](https://apis.io/apis/k6/k6-projects-api/) — Manage k6 projects within a Grafana stack.
+- [K6 Schedules API](https://apis.io/apis/k6/k6-schedules-api/) — Manage scheduled load-test execution.
+- [K6 Test runs API](https://apis.io/apis/k6/k6-test-runs-api/) — Inspect and control load-test execution runs.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-25
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### K6
+Which operations an agent can call, which act, and which need a human in the loop.
 
-k6 is an open source load testing tool by Grafana Labs for testing the performance and reliability of APIs using JavaScript-based test scripts.
+- [K6 Agentic Access](https://apis.io/agentic-access/k6/k6-agentic-access/)
 
-- **Human URL:** [https://k6.io](https://k6.io)
+#### Collections (6)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Load Testing
-- Testing
+- [Grafana Cloud k6 REST API](https://apis.io/collections/k6/open-k6/)
+- [Grafana Cloud k6 REST Load tests API](https://apis.io/collections/k6/open-k6-load-tests-api/)
+- [Grafana Cloud k6 REST Load tests Load zones API](https://apis.io/collections/k6/open-k6-load-zones-api/)
+- [Grafana Cloud k6 REST Load tests Projects API](https://apis.io/collections/k6/open-k6-projects-api/)
+- [Grafana Cloud k6 REST Load tests Schedules API](https://apis.io/collections/k6/open-k6-schedules-api/)
+- [Grafana Cloud k6 REST Load tests Test runs API](https://apis.io/collections/k6/open-k6-test-runs-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://grafana.com/docs/k6/latest/)
-- [GitHub Repository](https://github.com/grafana/k6)
-- [Postman Collection](collections/k6.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/k6.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [K6 Authentication](https://apis.io/security/k6/k6-authentication/)
+- [K6 Domain Security](https://apis.io/security/k6/k6-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/k6io)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [K6 Plans Pricing](https://apis.io/plans/k6/k6-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [K6 Rate Limits](https://apis.io/rate-limits/k6/k6-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [K6 Finops](https://apis.io/finops/k6/k6-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://k6.io)
 - [Documentation](https://grafana.com/docs/k6/latest/)
-- [GitHub Organization](https://github.com/grafana/k6)
+- [Blog](https://grafana.com/tags/k6/)
+- [GitHub](https://github.com/grafana/k6)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 29.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 39.3 |
+| Contract quality | 49.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/k6/](https://apis.io/providers/k6/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for K6: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/k6/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
